@@ -1,7 +1,7 @@
 {
     "extends": [
         "eslint:recommended",
-        "google",
+        "airbnb",
         "plugin:import/errors",
         "plugin:import/warnings"
     ],
@@ -23,29 +23,6 @@
         "browser": true,
         "node": true,
         "jquery": true
-    },
-    "rules": {
-        "import/no-unresolved": "off",
-        "indent": ["error", 2],
-        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-        "react/jsx-uses-react": "error",
-        "react/jsx-uses-vars": "error",
-        "comma-dangle": [
-            "error",
-            "never"
-        ],
-        "max-len": ["error", 120, {
-            "ignoreComments": true,
-            "ignoreTemplateLiterals": true,
-            "ignoreTrailingComments": true,
-            "ignoreUrls": true
-        }],
-        "no-invalid-this": 0,
-        "new-cap": ["error", {
-            "properties": false
-        }],
-        "require-jsdoc": 0,
-        "linebreak-style": 0
     },
     "settings": {
         "import/ignore": [".(scss|css)$"]
