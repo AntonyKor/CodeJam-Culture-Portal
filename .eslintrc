@@ -1,0 +1,30 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "airbnb",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "plugins": [
+        "react",
+        "import"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "parser": "babel-eslint",
+    "env": {
+        "mocha": true,
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "jquery": true
+    },
+    "settings": {
+        "import/ignore": [".(scss|css)$"]
+    }
+}
