@@ -1,18 +1,18 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import styles from './HomePage.scss';
+import styles from './PoetsList.scss';
 
-class HomePage extends React.Component {
+class PoetsList extends React.Component {
   render() {
     const { t } = this.props;
     return (
       <div className={styles.wrapper}>
-        {t('hello')} from HomePage
-        <Link to='/Poets'>Go to PoetsList component</Link>
+        {t('hello')} from PoetsList
+        <Link to="/Poets/3">Go to Poet component with id 3</Link>
       </div>
     );
   }
 }
 
-export default withNamespaces()(HomePage);
+export default withNamespaces()(PoetsList);

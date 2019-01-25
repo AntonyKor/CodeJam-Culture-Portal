@@ -1,10 +1,10 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import HeaderBar from '../../components/HeaderBar';
 import styles from './App.scss';
-import HeaderBar from 'src/components/HeaderBar';
 
 class App extends React.Component {
-  changeLanguage = ({target: {value}}) => {
+  changeLanguage = ({ target: { value } }) => {
     this.props.i18n.changeLanguage(value);
   }
 

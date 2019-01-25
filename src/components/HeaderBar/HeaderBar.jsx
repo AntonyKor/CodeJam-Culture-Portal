@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import styles from './HeaderBar.scss';
 
 const HeaderBar = ({
-  changeLanguage
+  changeLanguage,
 }) => (
   <div className={styles.wrapper}>
-    <Link to='/'>Home</Link>
+    <Link to="/">Home</Link>
     <select onChange={changeLanguage}>
       <option value="en">English</option>
       <option value="ru">Русский</option>

@@ -1,11 +1,15 @@
+const en = require('./en.json');
+const ru = require('./ru.json');
+const by = require('./by.json');
+
 export default {
   en: {
-    translation: require('./en.json')
+    translation: en,
   },
   by: {
-    translation: require('./by.json')
+    translation: by,
   },
   ru: {
-    translation: require('./ru.json')
-  }
-}
+    translation: ru,
+  },
+};
