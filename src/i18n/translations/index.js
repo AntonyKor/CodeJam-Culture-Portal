@@ -7,15 +7,15 @@ const enAuthors = {};
 const byAuthors = {};
 const ruAuthors = {};
 
-authors.forEach((item, index) => {
-  enAuthors[`name${index}`] = item.name.en;
-  enAuthors[`placeOfBirth${index}`] = item.placeOfBirth.en;
+authors.forEach((item) => {
+  enAuthors[`name${item.id}`] = item.name.en;
+  enAuthors[`placeOfBirth${item.id}`] = item.placeOfBirth.en;
 
-  byAuthors[`name${index}`] = item.name.by;
-  byAuthors[`placeOfBirth${index}`] = item.placeOfBirth.by;
+  byAuthors[`name${item.id}`] = item.name.by;
+  byAuthors[`placeOfBirth${item.id}`] = item.placeOfBirth.by;
 
-  ruAuthors[`name${index}`] = item.name.ru;
-  ruAuthors[`placeOfBirth${index}`] = item.placeOfBirth.ru;
+  ruAuthors[`name${item.id}`] = item.name.ru;
+  ruAuthors[`placeOfBirth${item.id}`] = item.placeOfBirth.ru;
 });
 
 export default {
