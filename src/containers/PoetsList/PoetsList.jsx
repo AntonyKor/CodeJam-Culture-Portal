@@ -1,5 +1,6 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import PropTypes from 'prop-types';
 import authors from 'src/data';
 import PoetsListItem from 'src/components/PoetsListItem';
 import SearchInput from 'src/components/SearchInput';
@@ -47,5 +48,9 @@ class PoetsList extends React.Component {
     );
   }
 }
+
+PoetsList.propTypes = {
+  t: PropTypes.func.isRequired,
+};
 
 export default withNamespaces()(PoetsList);
