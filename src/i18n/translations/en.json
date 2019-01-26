@@ -1,3 +1,5 @@
 {
-  "hello": "Hello"
+  "hello": "Hello",
+  "name-of-poet": "Poet's name",
+  "place-of-birth": "Place of birth"
 }
