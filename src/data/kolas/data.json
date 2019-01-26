@@ -1,0 +1,25 @@
+{
+  "name": {
+    "en": "Yakub Kolas",
+    "ru": "Якуб Колас",
+    "by": "Якуб Колас"
+  },
+  "placeOfBirth": {
+    "en": "Akinchytsy",
+    "ru": "Акинчицы",
+    "by": "Акінчыцы"
+  },
+  "video": "",
+  "works": [
+    {
+      "data": 1234,
+      "title": "Название"
+    }
+  ],
+  "bio": [
+    {
+      "dataText": "1902",
+      "description": "<p>написал война и мир</p>"
+    }
+  ]
+}
