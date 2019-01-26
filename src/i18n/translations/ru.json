@@ -1,5 +1,6 @@
 {
   "hello": "Привет",
   "name-of-poet": "Имя поэта",
-  "place-of-birth": "Место рождения"
+  "place-of-birth": "Место рождения",
+  "search-placeholder": "Поиск по имени или месту рождения"
 }
