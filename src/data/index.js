@@ -1,4 +1,4 @@
-import kolas from './kolas';
+import kolas from './kolas.json';
 
 const authors = [
   kolas,

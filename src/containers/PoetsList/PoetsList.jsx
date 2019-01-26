@@ -2,6 +2,7 @@ import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import styles from './PoetsList.scss';
+import authors from 'src/data';
 
 class PoetsList extends React.Component {
   render() {
@@ -9,7 +10,9 @@ class PoetsList extends React.Component {
     return (
       <div className={styles.wrapper}>
         {t('hello')} from PoetsList
-        <Link to="/Poets/3">Go to Poet component with id 3</Link>
+        {authors.map(author => (
+          <Link to={`/Poets/${author.id}`}>Go to Poet component with id {author.id}</Link>
+        ))}
       </div>
     );
   }

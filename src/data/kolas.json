@@ -1,4 +1,5 @@
 {
+  "id": "1",
   "name": {
     "en": "Yakub Kolas",
     "ru": "Якуб Колас",
@@ -22,5 +23,6 @@
       "dataText": "1902",
       "description": "<p>написал война и мир</p>"
     }
-  ]
+  ],
+  "photo": "kolas.jpeg"
 }
