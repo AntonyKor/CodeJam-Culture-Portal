@@ -16,7 +16,7 @@ authors.forEach((item) => {
 
   ruAuthors[`name${item.id}`] = item.name.ru;
   ruAuthors[`placeOfBirth${item.id}`] = item.placeOfBirth.ru;
-});console.log(enAuthors);
+});
 
 export default {
   en: {
