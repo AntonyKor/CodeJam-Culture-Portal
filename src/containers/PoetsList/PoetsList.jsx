@@ -5,6 +5,7 @@ import authors from 'src/data';
 import SearchInput from 'src/components/SearchInput';
 import PoetsTable from 'src/components/PoetsTable';
 
+authors.sort((a, b) => a.id - b.id);
 const authorsLittle = authors.map(author => author.id);
 
 class PoetsList extends React.Component {
