@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { t } from 'i18next';
+import { withNamespaces } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import styles from './HeaderBar.scss';
 
 
 const HeaderBar = ({
-  changeLanguage,
+  changeLanguage, t,
 }) => (
   <div className={styles.wrapper}>
-    <h1>{t('Belorussian poets')}</h1>
+    <h1>{t('Belorusian poets')}</h1>
     <nav>
       <NavLink exact to="/" className={styles.navLink} activeClassName={styles.active}>{t('Main')}</NavLink>
       <span>|</span>
@@ -24,11 +24,8 @@ const HeaderBar = ({
 );
 
 HeaderBar.propTypes = {
-  changeLanguage: PropTypes.func,
+  changeLanguage: PropTypes.func.isRequired,
+  t: PropTypes.func.isRequired,
 };
 
-HeaderBar.defaultProps = {
-  changeLanguage: () => 'en',
-};
-
-export default HeaderBar;
+export default withNamespaces()(HeaderBar);
