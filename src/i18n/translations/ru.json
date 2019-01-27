@@ -5,5 +5,9 @@
   "Poets list": "Список поэтов",
   "name-of-poet": "Имя поэта",
   "place-of-birth": "Место рождения",
-  "search-placeholder": "Поиск по имени или месту рождения"
+  "search-placeholder": "Поиск по имени или месту рождения",
+  "sort-by": "Сортировать по",
+  "standart-sort": "стандартная сортировка",
+  "name-sort": "имени",
+  "place-of-birth-sort": "месту рождения"
 }

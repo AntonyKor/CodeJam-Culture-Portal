@@ -5,5 +5,9 @@
   "Poets list": "Спіс паэтаў",
   "name-of-poet": "Імя паэта",
   "place-of-birth": "Месца нараджэння",
-  "search-placeholder": "Пошук па імені або месцы нараджэння"
+  "search-placeholder": "Пошук па імені або месцы нараджэння",
+  "sort-by": "Сартаваць па",
+  "standart-sort": "стандартнае сартаванне",
+  "name-sort": "імені",
+  "place-of-birth-sort": "месцы нараджэння"
 }
