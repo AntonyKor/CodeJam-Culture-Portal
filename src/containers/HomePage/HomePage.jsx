@@ -5,7 +5,7 @@ import styles from './HomePage.scss';
 import AboutTeam from '../../components/AboutTeam';
 import AuthorDay from '../../components/AuthorDay';
 
-// eslint-disable-next-line react/prefer-stateless-function
+
 class HomePage extends React.Component {
   render() {
     const { t } = this.props;
