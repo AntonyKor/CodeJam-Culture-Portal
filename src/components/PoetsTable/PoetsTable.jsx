@@ -5,7 +5,6 @@ import PoetsListItem from 'src/components/PoetsListItem';
 import styles from './PoetsTable.scss';
 
 const PoetsTable = ({ authors, t }) => {
-  let key = 0;
   return (
     <table className={styles.table}>
       <tbody>
@@ -14,10 +13,7 @@ const PoetsTable = ({ authors, t }) => {
           <th>{t('name-of-poet')}</th>
           <th>{t('place-of-birth')}</th>
         </tr>
-        {authors.map((id) => {
-          key += 1;
-          return <PoetsListItem key={key} id={id} name={t(`name${id}`)} placeOfBirth={t(`placeOfBirth${id}`)} />;
-        })}
+        {authors.map((id, index) => <PoetsListItem key={id} id={id} index={index} name={t(`name${id}`)} placeOfBirth={t(`placeOfBirth${id}`)} />)}
       </tbody>
     </table>
   );

@@ -5,5 +5,9 @@
   "Poets list": "Poets list",
   "name-of-poet": "Poet's name",
   "place-of-birth": "Place of birth",
-  "search-placeholder": "Search by name or place of birth"
+  "search-placeholder": "Search by name or place of birth",
+  "sort-by": "Sort by",
+  "standart-sort": "standart sorting",
+  "name-sort": "name",
+  "place-of-birth-sort": "place of birth"
 }
