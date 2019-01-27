@@ -2,6 +2,7 @@ import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import styles from './HomePage.scss';
+import AboutTeam from '../../components/AboutTeam';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class HomePage extends React.Component {
@@ -15,6 +16,7 @@ class HomePage extends React.Component {
         <p className={styles.portalDescription}>
            {t('portalDescription')} 
         </p>
+        <AboutTeam />
       </div>
     );
   }
