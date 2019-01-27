@@ -2,9 +2,8 @@ import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import PropTypes from 'prop-types';
 import authors from 'src/data';
-import PoetsListItem from 'src/components/PoetsListItem';
 import SearchInput from 'src/components/SearchInput';
-import styles from './PoetsList.scss';
+import PoetsTable from 'src/components/PoetsTable';
 
 const authorsLittle = authors.map(author => author.id);
 
@@ -24,26 +23,11 @@ class PoetsList extends React.Component {
   }
 
   render() {
-    const { t } = this.props;
-
-    let key = 0;
     const { authorsNow } = this.state;
     return (
-      <div className={styles.wrapper}>
+      <div>
         <SearchInput searchHeandler={(...args) => this.searchHeandler(...args)} />
-        <table>
-          <tbody>
-            <tr>
-              <th />
-              <th>{t('name-of-poet')}</th>
-              <th>{t('place-of-birth')}</th>
-            </tr>
-            {authorsNow.map((id) => {
-              key += 1;
-              return <PoetsListItem key={key} id={id} name={t(`name${id}`)} placeOfBirth={t(`placeOfBirth${id}`)} />;
-            })}
-          </tbody>
-        </table>
+        <PoetsTable authors={authorsNow} />
       </div>
     );
   }
