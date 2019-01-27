@@ -8,7 +8,6 @@ class App extends React.Component {
   changeLanguage = ({ target: { value } }) => {
     const { i18n } = this.props;
     i18n.changeLanguage(value);
-    console.log(i18n);
   }
 
   render() {
