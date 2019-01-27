@@ -9,7 +9,7 @@ const HeaderBar = ({
   changeLanguage, t,
 }) => (
   <div className={styles.wrapper}>
-    <h1>{t('Belorusian poets')}</h1>
+    <h1>{t('Belаrusian poets')}</h1>
     <nav>
       <NavLink exact to="/" className={styles.navLink} activeClassName={styles.active}>{t('Main')}</NavLink>
       <span>|</span>
