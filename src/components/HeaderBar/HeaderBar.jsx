@@ -6,7 +6,12 @@ const HeaderBar = ({
   changeLanguage,
 }) => (
   <div className={styles.wrapper}>
-    <Link to="/">Home</Link>
+    <h1>Белорусские поэты</h1>
+    <div className={styles.navigation}>
+      <Link className={styles.navLink} to="/">Главная</Link>
+      <span>|</span>
+      <Link className={styles.navLink} to="/Poets">Перейти к списку поэтов</Link>
+    </div>
     <select onChange={changeLanguage}>
       <option value="en">English</option>
       <option value="ru">Русский</option>
