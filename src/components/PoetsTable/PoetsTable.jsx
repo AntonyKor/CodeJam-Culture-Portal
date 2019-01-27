@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import PoetsListItem from 'src/components/PoetsListItem';
 import styles from './PoetsTable.scss';
 
-const PoetsTable = ({ authors = {}, t }) => {
+const PoetsTable = ({ authors, t }) => {
   let key = 0;
   return (
     <table className={styles.table}>
@@ -26,6 +26,10 @@ const PoetsTable = ({ authors = {}, t }) => {
 PoetsTable.propTypes = {
   t: PropTypes.func.isRequired,
   authors: PropTypes.PropTypes.arrayOf(PropTypes.object),
+};
+
+PoetsTable.defaultProps = {
+  authors: {},
 };
 
 export default withNamespaces()(PoetsTable);
