@@ -24,5 +24,6 @@
       "description": "<p>написал война и мир</p>"
     }
   ],
-  "photo": "kolas.jpeg"
+  "photo": "kolas.jpeg",
+  "gallery": ["0.jpeg"]
 }

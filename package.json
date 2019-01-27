@@ -10,9 +10,12 @@
     "lint": "npx eslint src/**/*.js src/**/*.jsx"
   },
   "dependencies": {
+    "google-maps-react": "^2.0.2",
     "i18next": "^14.0.1",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-google-maps": "^9.4.5",
     "react-i18next": "^9.0.8",
     "react-router-dom": "^4.3.1"
   },
