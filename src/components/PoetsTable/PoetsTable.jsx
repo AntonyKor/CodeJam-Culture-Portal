@@ -25,7 +25,7 @@ const PoetsTable = ({ authors, t }) => {
 
 PoetsTable.propTypes = {
   t: PropTypes.func.isRequired,
-  authors: PropTypes.PropTypes.arrayOf(PropTypes.object),
+  authors: PropTypes.PropTypes.arrayOf(PropTypes.string),
 };
 
 PoetsTable.defaultProps = {
