@@ -1,21 +1,40 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import styles from './PoetsList.scss';
+import PropTypes from 'prop-types';
 import authors from 'src/data';
+import SearchInput from 'src/components/SearchInput';
+import PoetsTable from 'src/components/PoetsTable';
+
+const authorsLittle = authors.map(author => author.id);
 
 class PoetsList extends React.Component {
-  render() {
+  state = {
+    authorsNow: authorsLittle,
+  }
+
+  searchHeandler(text) {
+    const search = text.toLowerCase();
     const { t } = this.props;
+
+    this.setState({
+      authorsNow: authorsLittle
+        .filter(id => t(`placeOfBirth${id}`).toLowerCase().includes(search) || t(`name${id}`).toLowerCase().includes(search)),
+    });
+  }
+
+  render() {
+    const { authorsNow } = this.state;
     return (
-      <div className={styles.wrapper}>
-        {t('hello')} from PoetsList
-        {authors.map(author => (
-          <Link to={`/Poets/${author.id}`}>Go to Poet component with id {author.id}</Link>
-        ))}
+      <div>
+        <SearchInput searchHeandler={(...args) => this.searchHeandler(...args)} />
+        <PoetsTable authors={authorsNow} />
       </div>
     );
   }
 }
+
+PoetsList.propTypes = {
+  t: PropTypes.func.isRequired,
+};
 
 export default withNamespaces()(PoetsList);
