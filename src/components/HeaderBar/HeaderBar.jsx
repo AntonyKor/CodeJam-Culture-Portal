@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './HeaderBar.scss';
 
 const HeaderBar = ({
@@ -7,11 +7,11 @@ const HeaderBar = ({
 }) => (
   <div className={styles.wrapper}>
     <h1>Белорусские поэты</h1>
-    <div className={styles.navigation}>
-      <Link className={styles.navLink} to="/">Главная</Link>
+    <nav>
+      <NavLink exact to="/" className={styles.navLink} activeClassName={styles.active}>Главная</NavLink>
       <span>|</span>
-      <Link className={styles.navLink} to="/Poets">Перейти к списку поэтов</Link>
-    </div>
+      <NavLink exact to="/Poets" className={styles.navLink} activeClassName={styles.active}>Перейти к списку поэтов</NavLink>
+    </nav>
     <select onChange={changeLanguage}>
       <option value="en">English</option>
       <option value="ru">Русский</option>
