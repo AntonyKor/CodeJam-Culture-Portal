@@ -84,5 +84,9 @@
     }
   ],
   "photo": "kolas.jpeg",
-  "gallery": ["0.jpeg"]
+  "gallery": ["0.jpeg", "7.jpg", "8.jpg"],
+  "map": {
+    "markGeometry": [53, 26],
+    "center": [53, 26]
+  }
 }

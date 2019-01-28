@@ -1,14 +1,14 @@
 {
   "id": "6",
   "name": {
-    "en": "-----",
+    "en": "Pimen Panchanka",
     "ru": "Пимен Емельянович Панченко",
     "by": "Пімен Емяльянавіч Панчанка"
   },
   "placeOfBirth": {
-    "en": "-----",
-    "ru": "Ревель",
-    "by": "Рэвель"
+    "en": "Tallinn",
+    "ru": "Таллин",
+    "by": "Талін"
   },
   "video": "https://www.youtube.com/watch?v=rIJuhMOYfmU&pbjreload=10",
   "works": [
@@ -78,5 +78,10 @@
       "description": "<p>Похоронен в Минске на Восточном кладбище.</p>"
     }
   ],
-  "photo": "panczenko.png"
+  "gallery": ["12.jpg", "13.jpg", "14.jpg"],
+  "photo": "panczenko.png",
+  "map": {
+    "markGeometry": [59, 24],
+    "center": [59, 24]
+  }
 }

@@ -83,5 +83,10 @@
       "description": "<p>Скончался в Минске от онкологического заболевания</p>"
     }
   ],
-  "photo": "hilevich.jpg"
+  "gallery": ["4.jpg", "5.jpg", "6.jpg"],
+  "photo": "hilevich.jpg",
+  "map": {
+    "markGeometry": [54, 27],
+    "center": [54, 27]
+  }
 }
