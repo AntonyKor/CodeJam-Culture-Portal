@@ -5,20 +5,17 @@ import AboutTeam from '../../components/AboutTeam';
 import AuthorDay from '../../components/AuthorDay';
 
 
-class Homepage extends React.Component {
-  render() {
-    const { t } = this.props;
-    return (
-      <div className={styles.wrapper}>
-        <h2>{t('portalTitle')}</h2> 
-        <p className={styles.portalDescription}>
-           {t('portalDescription')} 
-        </p>
-        <AuthorDay/>
-        <AboutTeam/>
-      </div>
-    );
-  }
-}
+const Homepage = ({
+  t,
+}) => (
+  <div className={styles.wrapper}>
+    <h2>{t('portalTitle')}</h2>
+    <p className={styles.portalDescription}>
+      {t('portalDescription')}
+    </p>
+    <AuthorDay />
+    <AboutTeam />
+  </div>
+);
 
 export default withNamespaces()(Homepage);

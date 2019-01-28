@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TimelineBlock = ({children, className}) => (
+const TimelineBlock = ({
+  children,
+  className,
+}) => (
   <div className={className}>{children}</div>
 );
 
