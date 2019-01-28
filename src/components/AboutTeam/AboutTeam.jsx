@@ -2,7 +2,7 @@ import React from 'react';
 import { withNamespaces } from 'react-i18next';
 import styles from './AboutTeam.scss';
 
-class AboutTeam extends React.Component {
+class Aboutteam extends React.Component {
   render() {
     const { t } = this.props;
     return (
@@ -43,4 +43,4 @@ class AboutTeam extends React.Component {
   }
 }
 
-export default withNamespaces()(AboutTeam);
+export default withNamespaces()(Aboutteam);

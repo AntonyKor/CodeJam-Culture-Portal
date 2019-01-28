@@ -5,7 +5,7 @@ import AboutTeam from '../../components/AboutTeam';
 import AuthorDay from '../../components/AuthorDay';
 
 
-class HomePage extends React.Component {
+class Homepage extends React.Component {
   render() {
     const { t } = this.props;
     return (
@@ -21,4 +21,4 @@ class HomePage extends React.Component {
   }
 }
 
-export default withNamespaces()(HomePage);
+export default withNamespaces()(Homepage);

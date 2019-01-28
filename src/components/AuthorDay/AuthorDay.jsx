@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 import styles from './AuthorDay.scss';
 import authors from '../../data';
 
-
 const id = authors[31 % 6].id;
 
-class AuthorDay extends React.Component {
+class Authorday extends React.Component {
   render() {
     const { t } = this.props;
     return (
@@ -19,4 +18,4 @@ class AuthorDay extends React.Component {
   }
 }
 
-export default withNamespaces()(AuthorDay);
+export default withNamespaces()(Authorday);
