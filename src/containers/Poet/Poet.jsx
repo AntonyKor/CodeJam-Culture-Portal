@@ -51,18 +51,21 @@ class Poet extends React.Component {
     const { bio, works, video, id } = this.state.author;
     return (
       <div className={styles.wrapper}>
-        <p style={{paddingLeft:'50%'}}>{t('hello')} from Poet. Poet id is: {match.params.id}</p>
+        <p className={styles.aphtor}>{t('hello')} {match.params.id}</p>
         <div>{this.state.photo && <img src={this.state.photo} alt="Poet" />}</div>
-        {bio.map(({ dataText, description, key }) => (
-          <TimelineBlock key={key} className={TimeLineBlockStyles.timeLineBlockWrapper}>
-            <TimelineDate className={TimelineDateStyles.timeLineDateWrapper} dataText={dataText} />
-            <TimelineContent className={TimelineContentStyles.timeLineContentWrapper} description={description} />
-          </TimelineBlock>
-        ))}
+        <div className={styles.timeline}>
+          {bio.map(({ dataText, description, key }) => (
+            <TimelineBlock key={key} className={TimeLineBlockStyles.timeLineBlockWrapper}>
+              <TimelineDate className={TimelineDateStyles.timeLineDateWrapper} dataText={dataText} />
+              <TimelineContent className={TimelineContentStyles.timeLineContentWrapper} description={description} />
+            </TimelineBlock>
+          ))}
+          </div>
         {works.map(({ date,title }, i) => (
           <Works key={i} date={date} title={title} className={WorksStyles.worksWrapper}  />
         ))}
-        <div style={{display:'flex',justifyContent:'space-between',marginBottom:'50px'}}>
+        <p className={styles.galleryname}>GALLERY</p>
+        <div className={styles.gallerywrapper}>
           {this.state.isGalleryLoaded && this.state.gallery.map(img => <div><img style={{height:'300px',width:'400px'}} src={img} alt="galleryItem" /></div>)}
         </div>
         <Video video={video} id={id} className={VideoStyles.videoWrapper} />
