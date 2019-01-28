@@ -1,21 +1,17 @@
 import React from 'react';
-import { withNamespaces } from 'react-i18next';
+import PropTypes from 'prop-types';
 import HeaderBar from '../../components/HeaderBar';
 import styles from './App.scss';
 
-class App extends React.Component {
-  changeLanguage = ({ target: { value } }) => {
-    this.props.i18n.changeLanguage(value);
-  }
+const App = ({ children }) => (
+  <div className={styles.wrapper}>
+    <HeaderBar />
+    {children}
+  </div>
+);
 
-  render() {
-    return (
-      <div className={styles.wrapper}>
-        <HeaderBar changeLanguage={this.changeLanguage} />
-        {this.props.children}
-      </div>
-    );
-  }
-}
+App.propTypes = {
+  children: PropTypes.element.isRequired,
+};
 
-export default withNamespaces()(App);
+export default App;
