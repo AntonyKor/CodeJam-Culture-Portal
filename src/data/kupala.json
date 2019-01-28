@@ -10,7 +10,7 @@
     "ru": "Вязынка",
     "by": "Вязынка"
   },
-  "video": "https://www.youtube.com/watch?v=zyUqRqG7yxk",
+  "video": "https://www.youtube.com/embed/zyUqRqG7yxk",
   "works": [
     {
       "date": 1908,
@@ -40,7 +40,7 @@
       "date": 1942,
       "title": "Беларускім партызанам"
     }
-    
+
   ],
   "bio": [
     {

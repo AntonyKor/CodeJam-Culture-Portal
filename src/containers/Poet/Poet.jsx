@@ -53,7 +53,7 @@ class Poet extends React.Component {
   }
 
   render() {
-    const { t, match } = this.props;
+    const { t } = this.props;
     const {
       author: {
         bio, works, video, id, map,
@@ -65,10 +65,7 @@ class Poet extends React.Component {
     return (
       <div className={styles.wrapper}>
         <p className={styles.aphtor}>
-          <span>
-            {`${t('hello')} `}
-          </span>
-          <span>{match.params.id}</span>
+          {t(`name${id}`)}
         </p>
         <div>{photo && <img src={photo} alt="Poet" />}</div>
         <div className={styles.timeline}>
