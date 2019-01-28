@@ -73,12 +73,14 @@ class Poet extends React.Component {
           ))}
         </div>
         <Video video={video} id={id} className={VideoStyles.videoWrapper} />
-        <Map
-          width={950}
-          height={500}
-          mapState={{ center: map.center, zoom: 10 }}
-          markGeometry={map.markGeometry}
-        />
+        <div className={styles.mapwrapper}>
+          <Map
+            width={950}
+            height={500}
+            mapState={{ center: map.center, zoom: 10 }}
+            markGeometry={map.markGeometry}
+          />
+        </div>
       </div>
     );
   }
