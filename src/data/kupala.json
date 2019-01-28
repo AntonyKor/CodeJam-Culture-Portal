@@ -84,5 +84,6 @@
       "description": "<p>Умер в гостинице 'Москва'</p>"
     }
   ],
+  "gallery": ["9.jpg", "10.jpg", "11.jpg"],
   "photo": "kupala.jpg"
 }
