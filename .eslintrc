@@ -26,5 +26,10 @@
     },
     "settings": {
         "import/ignore": [".(scss|css)$"]
+    },
+    "rules": {
+        "linebreak-style": 0,
+        "import/no-unresolved": "off",
+        "react/prop-types": 0
     }
 }

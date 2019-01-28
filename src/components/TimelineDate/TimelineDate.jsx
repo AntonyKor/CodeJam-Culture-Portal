@@ -6,7 +6,7 @@ const TimelineDate = ({ dataText, className }) => (
 );
 
 TimelineDate.propTypes = {
-  dataText: PropTypes.string.isRequired,
+  dataText: PropTypes.number.isRequired,
   className: PropTypes.string.isRequired,
 };
 
