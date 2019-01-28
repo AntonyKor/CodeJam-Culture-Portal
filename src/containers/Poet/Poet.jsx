@@ -39,7 +39,7 @@ class Poet extends React.Component {
           isGalleryLoaded: countLoadedImgs === this.state.author.gallery.length,
         });
       });
-    });    
+    });
   }
 
   componentWillUnmount() {
@@ -48,33 +48,36 @@ class Poet extends React.Component {
 
   render() {
     const { t, match } = this.props;
-    const { bio, works, video, id } = this.state.author;
+    const { bio, works, video, id, map } = this.state.author;
     return (
       <div className={styles.wrapper}>
         <p className={styles.aphtor}>{t('hello')} {match.params.id}</p>
         <div>{this.state.photo && <img src={this.state.photo} alt="Poet" />}</div>
         <div className={styles.timeline}>
-          {bio.map(({ dataText, description, key }) => (
-            <TimelineBlock key={key} className={TimeLineBlockStyles.timeLineBlockWrapper}>
+          {bio.map(({ dataText, description }, index) => (
+            <TimelineBlock key={index} className={TimeLineBlockStyles.timeLineBlockWrapper}>
               <TimelineDate className={TimelineDateStyles.timeLineDateWrapper} dataText={dataText} />
               <TimelineContent className={TimelineContentStyles.timeLineContentWrapper} description={description} />
             </TimelineBlock>
           ))}
           </div>
-        {works.map(({ date,title }, i) => (
+        {works.map(({ date, title }, i) => (
           <Works key={i} date={date} title={title} className={WorksStyles.worksWrapper}  />
         ))}
         <p className={styles.galleryname}>GALLERY</p>
         <div className={styles.gallerywrapper}>
-          {this.state.isGalleryLoaded && this.state.gallery.map(img => <div><img style={{height:'300px',width:'400px'}} src={img} alt="galleryItem" /></div>)}
+          {this.state.isGalleryLoaded && this.state.gallery.map(img => (
+            <div>
+              <img style={{height:'300px', width:'400px'}} src={img} alt="galleryItem" />
+            </div>
+          ))}
         </div>
         <Video video={video} id={id} className={VideoStyles.videoWrapper} />
         <Map
-          isMarkerShown
-          googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp_JVIISohb3g4haSPMW9jABNhIVfBqYQ&v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
+          width={950}
+          height={500}
+          mapState={{ center: map.center, zoom: 10 }}
+          markGeometry={map.markGeometry}
         />
       </div>
     );

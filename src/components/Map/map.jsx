@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
+import React from 'react';
+import { YMaps, Map, Placemark } from 'react-yandex-maps';
 
-const MyMapComponent = withScriptjs(withGoogleMap((props) =>
-<GoogleMap
-  defaultZoom={8}
-  defaultCenter={{ lat: -34.397, lng: 150.644 }}
->
-  {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
-</GoogleMap>
-))
+const MyMapComponent = ({
+  mapState,
+  markGeometry,
+  ...rest
+}) => (
+  <YMaps>
+    <Map state={mapState} {...rest}>
+      <Placemark geometry={markGeometry} />
+    </Map>
+  </YMaps>
+);
 
 export default MyMapComponent;
