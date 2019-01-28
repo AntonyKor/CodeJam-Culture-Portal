@@ -1,88 +1,88 @@
 {
-  "id": "2",
+  "id": "1",
   "name": {
-    "en": "Ivan Daminikavich Lutsevich",
-    "ru": "Иван Доминикович Луцевич",
-    "by": "Іван Дамінікавіч Луцэвіч"
+    "en": "Yakub Kolas",
+    "ru": "Якуб Колас",
+    "by": "Якуб Колас"
   },
   "placeOfBirth": {
-    "en": "Viazynka",
-    "ru": "Вязынка",
-    "by": "Вязынка"
+    "en": "Akinchytsy",
+    "ru": "Акинчицы",
+    "by": "Акінчыцы"
   },
-  "video": "https://www.youtube.com/watch?v=zyUqRqG7yxk",
+  "video": "https://www.youtube.com/watch?v=hni-TraQQ6Q",
   "works": [
     {
-      "date": 1908,
-      "title": "Жалейка"
+      "date": 1910,
+      "title": "Песні-жальбы"
     },
     {
-      "date": 1912,
-      "title": "Паўлінка"
+      "date": 1914,
+      "title": "Родныя з'явы"
     },
     {
-      "date": 1933,
-      "title": "Шляхам жыцьця"
+      "date": 1921,
+      "title": "Казкі жыцця"
     },
     {
-      "date": 1913,
-      "title": "Прымакі"
+      "date": 1923,
+      "title": "У палескай глушы"
     },
     {
-      "date": 1913,
-      "title": "Раскіданае гняздо"
+      "date": 1925,
+      "title": "Сымон-музыка"
     },
     {
-      "date": 1922,
-      "title": "Тутэйшыя"
+      "date": 1934,
+      "title": "Дрыгва"
     },
     {
-      "date": 1942,
-      "title": "Беларускім партызанам"
+      "date": 1955,
+      "title": "На ростанях"
     }
-    
   ],
   "bio": [
     {
       "key": "001",
       "dataText": 1882,
-      "description": "<p>Родился в деревне Вязынка</p>"
+      "description": "<p>Родился в деревне Акинчицы</p>"
     },
     {
       "key": "002",
       "dataText": 1902,
-      "description": "<p>Работал домашним учителем</p>"
+      "description": "<p>Окончил Несвижскую учительскую сименарию</p>"
     },
     {
       "key": "003",
-      "dataText": 1908,
-      "description": "<p>Работал в газете 'Наша Нива' в Вильне</p>"
+      "dataText": 1906,
+      "description": "<p>Первая публикация 'Край родимый'</p>"
     },
     {
       "key": "004",
       "dataText": 1915,
-      "description": "<p>Учился в Московском городском народном университете</p>"
+      "description": "<p>Эвакуировался в Пинск</p>"
     },
     {
       "key": "005",
       "dataText": 1916,
-      "description": "<p>Призван в армию</p>"
+      "description": "<p>Окончил Александровское военное училище</p>"
     },
     {
       "key": "006",
-      "dataText": 1919,
+      "dataText": 1921,
       "description": "<p>Переехал в Минск</p>"
     },
     {
       "key": "007",
-      "dataText": 1922,
-      "description": "<p>Редактор газеты 'Вольны сцяг'</p>"
+      "dataText": 1928,
+      "description": "<p>Стал вице-президентом Академии наук БССР</p>"
     },
     {
       "key": "008",
-      "dataText": 1942,
-      "description": "<p>Умер в гостинице 'Москва'</p>"
+      "dataText": 1946,
+      "description": "<p>Стал депутатом ВС СССР </p>"
     }
   ],
-  "photo": "kupala.jpg"
+  "photo": "kolas.jpeg",
+  "gallery": ["0.jpeg"]
 }
