@@ -30,7 +30,7 @@ class Poet extends React.Component {
   componentDidMount() {
     this._isMounted = true
     import(`src/images/photo/${this.state.author.photo}`).then(img => this._isMounted && this.setState({ photo: img.default }));
-    this.state.author.gallery.forEach((src) => {
+    this.state.author.gallery && this.state.author.gallery.forEach((src) => {
       import(`src/images/gallery/${src}`).then(img => {
         const countLoadedImgs = this.state.countLoadedImgs + 1;
         this._isMounted && this.setState({
