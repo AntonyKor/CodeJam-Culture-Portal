@@ -85,5 +85,9 @@
     }
   ],
   "gallery": ["9.jpg", "10.jpg", "11.jpg"],
-  "photo": "kupala.jpg"
+  "photo": "kupala.jpg",
+  "map": {
+    "markGeometry": [54, 26],
+    "center": [54, 26]
+  }
 }

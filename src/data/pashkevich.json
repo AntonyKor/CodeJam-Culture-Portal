@@ -79,5 +79,9 @@
     }
   ],
   "gallery": ["15.jpg", "16.jpg", "17.jpg"],
-  "photo": "pashkevich.jpg"
+  "photo": "pashkevich.jpg",
+  "map": {
+    "markGeometry": [53, 24],
+    "center": [53, 24]
+  }
 }

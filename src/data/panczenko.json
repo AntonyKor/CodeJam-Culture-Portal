@@ -79,5 +79,9 @@
     }
   ],
   "gallery": ["12.jpg", "13.jpg", "14.jpg"],
-  "photo": "panczenko.png"
+  "photo": "panczenko.png",
+  "map": {
+    "markGeometry": [59, 24],
+    "center": [59, 24]
+  }
 }

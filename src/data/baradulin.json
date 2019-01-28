@@ -74,5 +74,9 @@
     }
   ],
   "gallery": ["1.jpg", "2.jpg", "3.jpg"],
-  "photo": "baradulin.jpg"
+  "photo": "baradulin.jpg",
+  "map": {
+    "markGeometry": [55, 29],
+    "center": [55, 29]
+  }
 }
