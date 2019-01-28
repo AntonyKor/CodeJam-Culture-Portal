@@ -83,5 +83,6 @@
       "description": "<p>Стал депутатом ВС СССР </p>"
     }
   ],
-  "photo": "kolas.jpeg"
+  "photo": "kolas.jpeg",
+  "gallery": ["0.jpeg"]
 }
