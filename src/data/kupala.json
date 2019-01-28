@@ -46,43 +46,48 @@
     {
       "key": "001",
       "dataText": 1882,
-      "description": "<p>Родился в деревне Вязынка</p>"
+      "description": "Родился в деревне Вязынка"
     },
     {
       "key": "002",
       "dataText": 1902,
-      "description": "<p>Работал домашним учителем</p>"
+      "description": "Работал домашним учителем"
     },
     {
       "key": "003",
       "dataText": 1908,
-      "description": "<p>Работал в газете 'Наша Нива' в Вильне</p>"
+      "description": "Работал в газете 'Наша Нива' в Вильне"
     },
     {
       "key": "004",
       "dataText": 1915,
-      "description": "<p>Учился в Московском городском народном университете</p>"
+      "description": "Учился в Московском городском народном университете"
     },
     {
       "key": "005",
       "dataText": 1916,
-      "description": "<p>Призван в армию</p>"
+      "description": "Призван в армию"
     },
     {
       "key": "006",
       "dataText": 1919,
-      "description": "<p>Переехал в Минск</p>"
+      "description": "Переехал в Минск"
     },
     {
       "key": "007",
       "dataText": 1922,
-      "description": "<p>Редактор газеты 'Вольны сцяг'</p>"
+      "description": "Редактор газеты 'Вольны сцяг'"
     },
     {
       "key": "008",
       "dataText": 1942,
-      "description": "<p>Умер в гостинице 'Москва'</p>"
+      "description": "Умер в гостинице 'Москва'"
     }
   ],
-  "photo": "kupala.jpg"
+  "gallery": ["9.jpg", "10.jpg", "11.jpg"],
+  "photo": "kupala.jpg",
+  "map": {
+    "markGeometry": [54, 26],
+    "center": [54, 26]
+  }
 }

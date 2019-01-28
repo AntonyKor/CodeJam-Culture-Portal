@@ -45,33 +45,38 @@
     {
       "key": "001",
       "dataText": 1935,
-      "description": "<p>Родился на хуторе Вересовка</p>"
+      "description": "Родился на хуторе Вересовка"
     },
     {
       "key": "002",
       "dataText": 1954,
-      "description": "<p>Окончил Ушачскую школу</p>"
+      "description": "Окончил Ушачскую школу"
     },
     {
       "key": "003",
       "dataText": 1959,
-      "description": "<p>Окончил филологический факультет БГУ</p>"
+      "description": "Окончил филологический факультет БГУ"
     },
     {
       "key": "004",
       "dataText": 1989,
-      "description": "<p>Член сейма БНФ</p>"
+      "description": "Член сейма БНФ"
     },
     {
       "key": "005",
       "dataText": 1992,
-      "description": "<p>Получил звание народного поэта</p>"
+      "description": "Получил звание народного поэта"
     },
     {
       "key": "006",
       "dataText": 2014,
-      "description": "<p>Умер в своей квартире в Минске</p>"
+      "description": "Умер в своей квартире в Минске"
     }
   ],
-  "photo": "baradulin.jpg"
+  "gallery": ["1.jpg", "2.jpg", "3.jpg"],
+  "photo": "baradulin.jpg",
+  "map": {
+    "markGeometry": [55, 29],
+    "center": [55, 29]
+  }
 }

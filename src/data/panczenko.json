@@ -1,14 +1,14 @@
 {
   "id": "6",
   "name": {
-    "en": "-----",
+    "en": "Pimen Panchanka",
     "ru": "Пимен Емельянович Панченко",
     "by": "Пімен Емяльянавіч Панчанка"
   },
   "placeOfBirth": {
-    "en": "-----",
-    "ru": "Ревель",
-    "by": "Рэвель"
+    "en": "Tallinn",
+    "ru": "Таллин",
+    "by": "Талін"
   },
   "video": "https://www.youtube.com/watch?v=rIJuhMOYfmU&pbjreload=10",
   "works": [
@@ -45,38 +45,43 @@
     {
       "key": "001",
       "dataText": 1917,
-      "description": "<p>Родился в городе Ревель</p>"
+      "description": "Родился в городе Ревель"
     },
     {
       "key": "002",
       "dataText": 1933,
-      "description": "<p>Переехал в Бобруйск</p>"
+      "description": "Переехал в Бобруйск"
     },
     {
       "key": "003",
       "dataText": 1939,
-      "description": "<p>Служил специальным корреспондентом и писателем в армейских газетах</p>"
+      "description": "Служил специальным корреспондентом и писателем в армейских газетах"
     },
     {
       "key": "004",
       "dataText": 1944,
-      "description": "<p>Был в Иране</p>"
+      "description": "Был в Иране"
     },
     {
       "key": "005",
       "dataText": 1946,
-      "description": "<p>Вернулся в Минск</p>"
+      "description": "Вернулся в Минск"
     },
     {
       "key": "006",
       "dataText": 1953,
-      "description": "<p>Работал редактором альманаха 'Советская Отчизна'</p>"
+      "description": "Работал редактором альманаха 'Советская Отчизна'"
     },
     {
       "key": "007",
       "dataText": 1995,
-      "description": "<p>Похоронен в Минске на Восточном кладбище.</p>"
+      "description": "Похоронен в Минске на Восточном кладбище."
     }
   ],
-  "photo": "panczenko.png"
+  "gallery": ["12.jpg", "13.jpg", "14.jpg"],
+  "photo": "panczenko.png",
+  "map": {
+    "markGeometry": [59, 24],
+    "center": [59, 24]
+  }
 }
