@@ -7,6 +7,7 @@ import styles from './AuthorDay.scss';
 const id = 3;
 
 const Authorday = ({ t }) => (
+  
   <div className={styles.wrapper}>
     <h2>{t('authorOfTheDay')}</h2> 
     <Link to={`/Poets${id}`}>{t(`name${id}`)}</Link>

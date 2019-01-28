@@ -1,13 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withNamespaces } from 'react-i18next';
 import styles from './AboutTeam.scss';
 
-class Aboutteam extends React.Component {
-  render() {
-    const { t } = this.props;
-    return (
+const Aboutteam = ({ t }) => (
+
       <div className={styles.wrapper}>
-        <h2>{t('devTeam')}</h2> 
+        <h2>{t('devTeam')}</h2>
+
         <div className={styles.devTeam}>
           <div className={styles.devCard}>
             <img src={require('src/images/team/AntonyKor.png')} width="100%" />
@@ -16,6 +16,7 @@ class Aboutteam extends React.Component {
               <li>Anton Kalodzich</li>
             </ul>
           </div>
+
           <div className={styles.devCard}>
             <img src={require('src/images/team/gleb7raul.png')} width="100%" />
             <ul className={styles.devName}>
@@ -23,6 +24,7 @@ class Aboutteam extends React.Component {
               <li>Hleb Nebiadukhin</li>
             </ul>
           </div>
+
           <div className={styles.devCard}>
             <img src={require('src/images/team/vvikota.jpg')} width="100%" />
             <ul className={styles.devName}>
@@ -30,6 +32,7 @@ class Aboutteam extends React.Component {
               <li>Viktar Rymsha</li>
             </ul>
           </div>
+
           <div className={styles.devCard}>
             <img src={require('src/images/team/NoviceBlunderer.png')} width="100%" />
             <ul className={styles.devName}>
@@ -37,10 +40,13 @@ class Aboutteam extends React.Component {
               <li>Kanstantsin Piatrou</li>
             </ul>
           </div>
+
         </div>
       </div>
     );
-  }
-}
+    
+    Aboutteam.propTypes = {
+      t: PropTypes.func.isRequired,
+    };    
 
 export default withNamespaces()(Aboutteam);
