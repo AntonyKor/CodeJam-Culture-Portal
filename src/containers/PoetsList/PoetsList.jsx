@@ -8,7 +8,7 @@ import SortSelect from 'src/components/SortSelect';
 
 class PoetsList extends React.Component {
   state = {
-    authorsNow: authors.sort((a, b) => a.id - b.id),
+    authorsNow: authors,
     sortBy: 'id',
   }
 
@@ -29,28 +29,27 @@ class PoetsList extends React.Component {
   }
 
   sortHeandler(sortBy) {
-    const { t } = this.props;
     const { authorsNow } = this.state;
 
     this.setState({
       sortBy,
-      authorsNow: authorsNow
-        .sort((a, b) => {
-          if (sortBy === 'id') return a.id - b.id;
-          return t(sortBy + a.id).localeCompare(t(sortBy + b.id));
-        }),
+      authorsNow,
     });
   }
 
   render() {
-    const { authorsNow } = this.state;
+    const { authorsNow, sortBy } = this.state;
+    const { t } = this.props;
 
     return (
       <div>
         <SearchInput searchHeandler={(...args) => this.searchHeandler(...args)} />
-        <SortSelect sortHeandler={sortBy => this.sortHeandler(sortBy)} />
+        <SortSelect sortHeandler={sort => this.sortHeandler(sort)} />
         <PoetsTable
-          authors={authorsNow.map(author => author.id)}
+          authors={authorsNow.sort((a, b) => {
+            if (sortBy === 'id') return a.id - b.id;
+            return t(sortBy + a.id).localeCompare(t(sortBy + b.id));
+          }).map(author => author.id)}
         />
       </div>
     );
